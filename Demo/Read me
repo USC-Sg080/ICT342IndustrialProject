@@ -1,0 +1,2 @@
+This is the REST api usage here where after running the server if user runs a query in browser URL this will print a list of all service and suburb according to postcode provided by the user.
+'http://127.0.0.1:8080/getServices/postcode=3000' this is the query which will run this function and data from csv file has been selected here and then send to the HTML document named index.
