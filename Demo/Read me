@@ -1,2 +1,0 @@
-This is the REST api usage here where after running the server if user runs a query Html forms this will create .csv files with headings desire.
-'http://127.0.0.1:8080/' this is the query which will run index.html where user can select action desire Create or Import .csv file.
