@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ICT342 Project Industry</title>
+    </head>
+    <body>
+        <h1>LEON'S CLINIC</h1>
+        <p><b>LINKS TO DESTINATION</b></p>
+    
+    <!-- Navigation -->
+<nav class="w3-bar w3-black">
+    <a href="#about" class="w3-button w3-bar-item"><strong>About</strong></a>
+    <a href="#create" class="w3-button w3-bar-item"><strong>Create</strong></a>
+    <a href="#import" class="w3-button w3-bar-item"><strong>Import</strong></a>
+    <a href="#Export" class="w3-button w3-bar-item"><strong>Export</strong></a>
+  </nav>
+  <!-- Slide Show -->
+<section>
+    <img class="project Industry" src="clinic 1.jpeg"
+    style="width:100%">
+  </section>
+  <script>
+    // Automatic Slideshow - change image every 9 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("project Industry");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
+    
+    <footer id="main-footer">
+      <p>Copyright & copy; 2021, Leon's clinic</p>
+    </footer>
+
+    </body>
+</html>
