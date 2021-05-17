@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>import page</title>
+        <link rel="stylesheet" href="import.css">
+    </head>
+    <body>
+          <!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item"><strong>Home</strong></a>
+    <a href="#about" class="w3-button w3-bar-item"><strong>About</strong></a>
+    <a href="#create" class="w3-button w3-bar-item"><strong>Create</strong></a>
+    <a href="#import" class="w3-button w3-bar-item"><strong>Import</strong></a>
+    
+  </nav>
+  <br>
+        <h1>Select to create</h1>
+        <br>
+        <form method='POST' enctype="multipart/form-data" action="/doimport">
+            <div>
+              <label for="File">click to upload:</label>
+              <input type="file" name="uploadfile" />
+            </div>
+        </form>
+            <br>
+            <input type="submit" value="Submit">
+            <button>cancel</button>
+    </body>
+</html>

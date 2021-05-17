@@ -1,0 +1,21 @@
+h1{
+    color: black;
+    font-size: 50px;
+    margin: 0px;
+    background-color: lightgreen;
+    text-align: center;
+}
+nav{
+    color: black;
+    font-size: 20px;
+    margin: 0px;
+    background-color: grey;
+    text-align: left;
+}
+footer{
+    color: black;
+    font-size: 15px;
+    margin: 0px;
+    background-color:lightgreen;
+    text-align: center;
+}

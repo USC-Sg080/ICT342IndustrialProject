@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>create page</title>
+        <link rel="stylesheet" href="create.css">
+    </head>
+    <body>
+        <h1>Create new dataset or Event</h1>
+    <!-- Navigation -->
+<nav class="w3-bar w3-black">
+    <a href="#home" class="w3-button w3-bar-item"><strong>Home</strong></a>
+    <a href="#about" class="w3-button w3-bar-item"><strong>About</strong></a>
+    <a href="#create" class="w3-button w3-bar-item"><strong>Create</strong></a>
+    <a href="#import" class="w3-button w3-bar-item"><strong>Import</strong></a>
+    
+  </nav>
+  <br>
+
+        <!--Forms-->
+        <form action="process.php" method="Post">
+            <div>
+                <label for="File">Select type of file to create</label>
+                <select id="file">
+                    <option value="Dataset">Dataset</option>
+                    <option value="Event">Event</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>File Name</label>
+                <input type="text" name="fileName" placeholder="Enter file name">
+            </div>
+            <br>
+            
+            <div>
+                <p>Select heading for new file</p>
+                <p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options</p>
+                <label for="headings">Choose Headings:</label>
+                <select name="headings">
+                    <option value="NOTES">NOTES</option>
+                    <option value="CLIN.DSET.DESCR">CLINIC DATASET DESCRIPTION</option>
+                    <option value="CLIN.DSET.NAME">CLINIC DATASET NAME</option>
+                    <option value="PK">PRIMARY KEY</option>
+                    <option value="PATIENT.ID">PATIENT ID</option>
+                    <option value="DOB">DATE OF BIRTH</option>
+                    <option value="SEX">GENDER</option>
+                    <option value="HEIGHT">HEIGHT</option>
+                    <option value="WEIGHT">WEIGHT</option>
+                    <option value="COMMENT">COMMENT</option>
+                    <option value="PK.ORIGIN">PK.ORIGIN</option>
+                    <option value="EVENT">EVENT</option>
+                    <option value="CLOSEST.DATE">PATIENT ID</option>
+                    <option value="CLOSEST.DATE.EVENT">CLOSEST DATE EVENT</option>
+                    <option value="HB">HB</option>
+                    <option value="HCT">HCT</option>
+                    <option value="RCC">RCC</option>
+                    <option value="MCV">MCV</option>
+                    <option value="RETIC">RETIC</option>
+                    <option value="PRBC">PRBC</option>
+                    <option value="MAJOR.BLEED">MAJOR BLEED</option>
+                    <option value="ON.PUMP">ON PUMP</option>
+                    <option value="CS.URGENCY">CS URGENCY</option>
+                    <option value="DIAGNOSIS">DIAGNOSIS</option>
+                    <option value="TREATMENT">TREATMENT</option>
+                    <option value="RAW.DATA">RAW DATA</option>
+
+                </select>
+            </div>
+            </form>
+            <br>
+            <!--Forms-->
+    <form action="process.php" method="post">
+        <div>
+            <label for="file">Dataset</label>
+            <select id="file">
+                <option value="DS1">DS1</option>
+                <option value="DS7B">DS7B</option>
+                <option value="DS7.B">DS7.B</option>
+                <option value="DS7C">DS7C</option>
+                <option value="DS7D">DS7D</option>
+                <option value="DS7E">DS7E</option>
+                <option value="DS7.E">DS7.E</option>
+                </select>
+        </div>
+    </form>
+    <br>
+     <!---Forms-->
+     <form action="process.php" method="post">
+        <div>
+            <label for="file">Event</label>
+            <select id="file">
+                <option value="HOSP.DISCHARGE">HOSPITAL DISCHARGE</option>
+                <option value="FINAL.PATHOLOGY">FINAL PATHOLOGY</option>
+                <option value="POSTOPERATIVE.PATHOLGY">POSTOPERATIVE PATHOLOGY</option>
+                <option value="PAM.INITIAL.PATHOLOGY">PAM INITIAL PATHOLOGY</option>
+                <option value="PAM.TREATMENT">PAM TREATMENT</option>
+                <option value="PAM.FOLLOW.UP.PATHOLOGY">PAM FOLLOW UP PATHOLOGY</option>
+                <option value="PAM.TREATMENT.CURTAIL">PAM TREATMENT CURTAIL</option>
+                <option value="PREOPERATIVE.MORTALITY">PREOPERATIVE MORTALITY</option>
+                <option value="PREOPERATIVE.PATHOLOGY">PREOPERATIVE PATHOLOGY</option>
+                <option value="PREOPERATIVE.PRBC">PREOPERATIVE</option>
+                <option value="SURGERY">SURGERY</option>
+                <option value="INTRAOPERATIVE.PRBC">INTRAOPERATIVE PRBC</option>
+                <option value="POSTOPERATIVE.PRBC">POSTOPERATIVE PRBC</option>
+                <option value="PAM.WAITLIST">PAM WAITLIST</option>
+                <option value="PAM.ADMISSION">PAM ADMISSION</option>
+            
+            </select>
+        </div>
+
+    </form>
+    <br>
+    <input type="submit" value="Submit">   
+    <button>cancel</button>
+    </body>
+</html>

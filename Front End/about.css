@@ -1,0 +1,22 @@
+nav{
+    color: black;
+    font-size: 20px;
+    margin: 0px;
+    background-color: lightgray;
+    text-align: left;
+}
+h1{
+    color: black;
+    font-size: 30px;
+    margin: 0px;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+p1{
+    color: black;
+    font-size: 15px;
+    margin: 0px;
+    background-color: whitesmoke;
+    text-align:center;
+}

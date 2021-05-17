@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>import1 page</title>
+    <link rel="stylesheet" href="import1.css">
+</head>
+<body>
+        <!-- Navigation -->
+<nav class="w3-bar w3-black">
+    <a href="#home" class="w3-button w3-bar-item"><strong>Home</strong></a>
+    <a href="#about" class="w3-button w3-bar-item"><strong>About</strong></a>
+    <a href="#create" class="w3-button w3-bar-item"><strong>Create</strong></a>
+    <a href="#import" class="w3-button w3-bar-item"><strong>Import</strong></a>
+    
+  </nav>
+  <br>
+  <div>
+    <label>File Name</label>
+    <input type="text" name="fileName" placeholder="Enter file name">
+</div>
+<br>
+
+  <!--Forms-->
+  <form action="process.php" method="Post">
+    <div>
+        <label for="File">Select type of file</label>
+        <select id="file">
+            <option value="Dataset">Dataset</option>
+            <option value="Event">Event</option>
+        </select>
+    </div>
+    <br> 
+    <div>
+        <h1>Select heading</h1>
+        <p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options</p>
+        <label for="headings">current Headings:</label>
+        <select name="headings">
+            <option value="name">Name</option>
+            <option value="age">Age</option>
+            <option value="number">Number</option>
+            <option value="year">Year</option>
+    </select>
+    </div>
+    <br>
+    <div>
+        <label for="headings">Standard Headings</label>
+        <select name="Headings">
+            <option value="NOTES">NOTES</option>
+            <option value="CLIN.DSET.DESCR">CLINIC DATASET DESCRIPTION</option>
+            <option value="CLIN.DSET.NAME">CLINIC DATASET NAME</option>
+            <option value="PK">PRIMARY KEY</option>
+            <option value="PATIENT.ID">PATIENT ID</option>
+            <option value="DOB">DATE OF BIRTH</option>
+            <option value="SEX">GENDER</option>
+            <option value="HEIGHT">HEIGHT</option>
+            <option value="WEIGHT">WEIGHT</option>
+            <option value="COMMENT">COMMENT</option>
+            <option value="PK.ORIGIN">PK.ORIGIN</option>
+            <option value="EVENT">EVENT</option>
+            <option value="CLOSEST.DATE">PATIENT ID</option>
+            <option value="CLOSEST.DATE.EVENT">CLOSEST DATE EVENT</option>
+            <option value="HB">HB</option>
+            <option value="HCT">HCT</option>
+            <option value="RCC">RCC</option>
+            <option value="MCV">MCV</option>
+            <option value="RETIC">RETIC</option>
+            <option value="PRBC">PRBC</option>
+            <option value="MAJOR.BLEED">MAJOR BLEED</option>
+            <option value="ON.PUMP">ON PUMP</option>
+            <option value="CS.URGENCY">CS URGENCY</option>
+            <option value="DIAGNOSIS">DIAGNOSIS</option>
+            <option value="TREATMENT">TREATMENT</option>
+            <option value="RAW.DATA">RAW DATA</option>
+        </select>
+    </div>
+    <br>
+    
+    <input type="submit" value="Submit">
+    <button>cancel</button>
+</form>
+</body>
+</html>
+
