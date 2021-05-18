@@ -26,8 +26,8 @@ class Dataset:
           "DOB is" + self.DOB,
           "SEX" + self.SEX,
           "WEIGHT" + self.WEIGHT,
-          "HEIGHT" + self.HEIGT
-          "COMMENT" + self.COMMENT
+          "HEIGHT" + self.HEIGT,
+          "COMMENT" + self.COMMENT,
           "PK ORIGIN" + self.PK ORIGIN)
 
 p1 = Dataset(NAME, DOB, SEX, WEIGHT, HEIGHT)
