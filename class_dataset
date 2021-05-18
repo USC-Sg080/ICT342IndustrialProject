@@ -30,5 +30,5 @@ class Dataset:
           "COMMENT" + self.COMMENT,
           "PK ORIGIN" + self.PK ORIGIN)
 
-p1 = Dataset(NAME, DOB, SEX, WEIGHT, HEIGHT)
+p1 = Dataset(DATASET, CLIN DSET NAME, PK, NAME, DOB, SEX, WEIGHT, HEIGHT,COMMENT, PK ORIGIN)
 p1.myfunc()
