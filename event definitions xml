@@ -1,0 +1,36 @@
+import csv
+f = open ('ICT342IndustrialProject-main\Dataset Server\Event definitions.csv') #reading the dataset definitons file 
+csv_f = csv.reader(f)
+data = []
+
+for row in csv_f:
+    data.append(row) # sorting the row data as indiviudal list
+f.close()
+
+print(data[1:]) #printing all the rows
+
+def convert_row(row):
+    return """<Event_Definitons>
+    <dataset>%s</dataset>
+    <notes>%s</notes>
+    <patient.id>%s</patient.id>
+    <event>%s</event>
+    <closest.date>%s</closest.date>
+    <closest.date.event>%s</closest.date.event>
+    <hb>%s</hb>
+    <hct>%s</hct>
+    <rcc>%s</rcc>
+    <mcv>%s</mcv>
+    <retic>%s</retic>
+    <prbc>%s</prbc>
+    <weight>%s</weight>
+    <major.bleed>%s</major.bleed>
+    <on.pump>%s</on.pump>
+    <cs.urgency>%s</cs.urgency>
+    <diagnosis>%s</diagnosis>
+    <treatment>%s</treatment>
+    <raw.data>%s</raw.data>
+</Event_Definitions>""" % (row[0], row[1], row[2], row[3],row[4], row[5],row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15],row[16], row[17], row[18] )
+
+with open('event_definitions.xml', 'w' ) as f:
+    f.write('\n'.join([convert_row (row) for row in data]))
