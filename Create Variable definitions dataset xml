@@ -1,0 +1,50 @@
+import csv
+f = open ('ICT342IndustrialProject-main\Dataset Server\Variable Definitions.csv') #reading the dataset definitons file 
+csv_f = csv.reader(f)
+data = []
+
+for row in csv_f:
+    data.append(row) # sorting the row data as indiviudal list
+f.close()
+
+print(data[1:]) #printing all the rows
+
+def convert_row(row):
+    return """<Variable_Definitons>
+    <var.definition>%s</var.definition>
+    <notes>%s</notes>
+    <dataset>%s</dataset>
+    <clin.dset.descr>%s</clin.dset.descr>
+    <clin.dset.name>%s</clin.dset.name>
+    <pk>%s</pk>
+    <patient.id>%s</patient.id>
+    <dob>%s</dob>
+    <sex>%s</sex>
+    <height>%s</height>
+    <weight>%s</weight>
+    <comment>%s</comment>
+    <pk.origin>%s</pk.origin>
+    <event>%s</event>
+    <closest.date>%s</closest.date>
+    <closest.date.event>%s</closest.date.event>
+    <hb>%s</hb>
+    <hct>%s</hct>
+    <rcc>%s</rcc>
+    <mcv>%s</mcv>
+    <retic>%s</retic>
+    <prbc>%s</prbc>
+    <major.bleed>%s</major.bleed>
+    <on.pump>%s</on.pump>
+    <cs.urgency>%s</cs.urgency>
+    <diagnosis>%s</diagnosis>
+    <treatment>%s</treatment>
+    <raw.data>%s</raw.data>
+</Variable_Definitions>""" % (row[0], row[1], row[2], row[3],row[4], row[5],row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15], row[16], row[17], row[18], row[19], row[20], row[21], row[22], row[23], row[24], row[25], row[26], row[27] )
+
+with open('variable_definitions.xml', 'w' ) as f:
+    f.write('\n'.join([convert_row (row) for row in data]))
+
+
+
+
+    
